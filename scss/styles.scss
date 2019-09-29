@@ -18,7 +18,7 @@
         3. Global Styles
         4. Lead Styles
         5. About Styles
-        6. Experience Styles
+        6. Education Styles
         7. Education Styles
         8. Project Styles
         9. Skills Styles
@@ -96,8 +96,8 @@ body {
 
 // No JS styles
 .no-js {
-    #experience-timeline {
-        > div {
+    #education-timeline {
+        >div {
             background: $background;
             padding: 10px;
             margin-bottom: 10px;
@@ -125,19 +125,21 @@ body {
             }
         }
 
-        &:before, &:after {
+        &:before,
+        &:after {
             content: none;
         }
     }
 }
 
 @keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header {
@@ -156,7 +158,7 @@ header {
         display: inline-block;
         background: $background;
         text-align: center;
-        padding: 10px;
+        padding: 5px;
         margin: 0;
         border-bottom-right-radius: 4px;
         border-bottom-left-radius: 4px;
@@ -259,7 +261,7 @@ footer {
         height: 35px;
         border-radius: 50%;
         border: 3px solid lighten($text, 25%);
-        text-align:center;
+        text-align: center;
     }
 
     i {
@@ -308,11 +310,11 @@ footer {
 }
 
 .shadow {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .shadow-large {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .heading {
@@ -357,19 +359,15 @@ footer {
 }
 
 #lead-content {
-    position: absolute;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    margin: 20px;
 
-    h1, h2 {
+    h1,
+    h2 {
         margin: 0;
     }
 
     h1 {
-        color: #fff;
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -415,13 +413,14 @@ footer {
         height: 35px;
         border-radius: 50%;
         border: 3px solid lighten($base-color, 25%);
-        text-align:center;
+        text-align: center;
     }
 
     i {
         animation: pulsate 1.5s ease;
         animation-iteration-count: infinite;
-        padding-top: 5px;;
+        padding-top: 5px;
+        ;
     }
 }
 
@@ -455,17 +454,34 @@ footer {
 
     p {
         color: $text;
-        margin: 0;
+    }
+}
+
+#ramblings {
+    padding: 75px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+    }
+
+    p {
+        color: $text;
+    }
+
+    .rambling {
+        text-align: justify;
     }
 }
 
 /*
     --------------------------------
-    ----- 6. Experience Styles -----
+    ----- 6. Education Styles -----
     --------------------------------
 */
 
-#experience {
+#education {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid $border;
@@ -475,7 +491,7 @@ footer {
     }
 }
 
-#experience-timeline {
+#education-timeline {
     margin: 30px auto 0 auto;
     position: relative;
     max-width: 1000px;
@@ -572,60 +588,6 @@ footer {
 
 /*
     -------------------------------
-    ----- 7. Education Styles -----
-    -------------------------------
-*/
-
-#education {
-    padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid $border;
-    text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
-    }
-}
-
-.education-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid $border;
-    text-align: left;
-
-    h3 {
-        font-weight: 500;
-        float: left;
-        margin: 0;
-        color: $heading;
-    }
-
-    span {
-        color: $text;
-        float: right;
-    }
-
-    h4 {
-        color: $text;
-        clear: both;
-        font-weight: 500;
-        margin: 0 0 15px 0;
-    }
-
-    p, ul {
-        margin: 0;
-        color: $text;
-        font-size: 0.9em;
-    }
-
-    ul {
-        padding: 0 0 0 15px;
-    }
-}
-
-/*
-    -------------------------------
     ----- 8. Project Styles -----
     -------------------------------
 */
@@ -646,7 +608,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: $background;
     border-radius: 4px;
 }
 
@@ -673,6 +635,26 @@ footer {
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
+}
+
+#interests {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.interest {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: $background-alt;
+    border-radius: 4px;
 }
 
 .no-image {
@@ -723,71 +705,6 @@ footer {
 }
 
 /*
-    -------------------------------
-    ----- 10. Contact Styles -----
-    -------------------------------
-*/
-
-#contact {
-    padding: 50px 15px;
-    background: $base-color;
-    text-align: center;
-
-    h2 {
-        margin: 0 0 15px 0;
-        color: #fff;
-        font-weight: 500;
-    }
-}
-
-#contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-
-    input, textarea {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        border: none;
-        margin-bottom: 10px;
-        background: darken($base-color, 15%);
-        color: #fff;
-        @include transition();
-        @include placeholder {
-            color: #fff;
-        }
-
-        &:focus {
-            outline: none;
-            background: darken($base-color, 25%);
-        }
-    }
-
-    textarea {
-        height: 150px;
-        resize: none;
-    }
-
-    button {
-        display: block;
-        width: 100%;
-        background: #fff;
-        border-radius: 4px;
-        padding: 5px 10px;
-        border: none;
-        color: $base-color;
-        font-weight: 700;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        @include transition();
-
-        &:hover {
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-        }
-    }
-}
-
-/*
     ---------------------------------------
     ----- 11. Optional Section Styles -----
     ---------------------------------------
@@ -824,7 +741,8 @@ footer {
         margin: 0 0 15px 0;
     }
 
-    p, ul {
+    p,
+    ul {
         margin: 0 0 15px 0;
         color: $text;
         font-size: 0.9em;
@@ -844,8 +762,10 @@ footer {
 // Collapse timeline
 @media only screen and (max-width: 750px) {
 
-    #experience-timeline {
-        &:before, &:after {
+    #education-timeline {
+
+        &:before,
+        &:after {
             left: 23px;
         }
 
@@ -917,7 +837,8 @@ footer {
         height: 100%;
     }
 
-    #mobile-menu-open, #mobile-menu-close {
+    #mobile-menu-open,
+    #mobile-menu-close {
         display: block;
     }
 
@@ -953,7 +874,9 @@ footer {
     }
 
     .education-block {
-        h3, span {
+
+        h3,
+        span {
             float: none;
         }
     }
