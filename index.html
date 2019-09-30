@@ -33,7 +33,7 @@
                 <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#ramblings">Ramblings</a>
+                <a href="#ramblings">More About Me</a>
             </li>
             <li>
                 <a href="#projects">Research Projects</a>
@@ -121,17 +121,18 @@
     <!-- End #education -->
 
     <div id="ramblings">
-        <h2 class="heading">More about me</h2>
+        <h2 class="heading">More About Me</h2>
         <div class="container">
             <div class="row">
                 <div class="rambling col-md-8 col-md-offset-2">
                     <p>
                         Figuring out the ways of the Universe has always been fun for me, and given modern astronomy's big strides, it 
                         has become a gift that keeps on giving more exciting physics. My bachelor's in engineering helped me understand 
-                        the technology that makes this possible, better. I found Radio Astronomy to be the perfect blend of astronomy and 
+                        the technology that makes this possible. I found Radio Astronomy to be the perfect blend of astronomy and 
                         electronics, and am interested in applying its techniques to astrophysical sources. I am also interested 
                         in image processing, in both radio imaging and High Contrast Imaging techniques.
-                        
+                    </p>
+                    <p>
                         Alongside my bachelor's I pursued an intensive Research Education Advancement Program in Physics %(add link) at
                         the JN Planetarium in Bangalore. This gave me my first exposure to observational astronomy, before which I had 
                         dabbled in amateur astronomy through starting an astronomy club %(add link). After delving into radio astronomy 
@@ -140,11 +141,8 @@
                         Leiden. This has involved exciting courses like 'Origin and Evolution of the Universe', 'Radio astronomy'. 
                         I also took up courses that equipped me with tools to handle observational data better, such as - 
                         'Numerical recipies in Astrophysics', 'Astrostatistics' and 'High Contrast Imaging'.
-                        
-                        Apart from astronomy, I enjoy teaching science and conducting outreach activities for school students and the
-                        general public. I also perform the dance form- Bharatanatyam, and enjoy sketching, painting and burying myself in
-                        books (not simultaneously! Although that might be a fun experiment) in my free time.  
                     </p>
+            
                 </div>
             </div>
         </div>
@@ -160,11 +158,10 @@
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Reconstructing the synchrotron cosmic web</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
-                            volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
-                            eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            M.Sc. Final thesis
+                            Advisor : Dr. Reinout van Weeren, Leiden University
                         </p>
                     </div>
                     <!-- End .project-info -->
@@ -173,20 +170,59 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/coverRDIimg.jpg" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Matching kernel method for comparing transition disk datasets</h3> 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam
-                            volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
-                            eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Advisor : Prof. Christoph Keller and Dr. Jos de Boer, Leiden University
+                            The project involved analysis how data of the same object, recorded with different 
+                            instruments, observing modes or in different wavelengths can be combined while taking the 
+                            variations of theinstrumental response function into account. A matching kernel to convert
+                            one PSF response to another was found, and different conditions under which this matching 
+                            kernel is efficient and otherwise were explored. The method was applied to the transition disk around 
+                            RXJ1615.3-3255, while using Reference Differential Imaging.
+                            
+                            The matching kernel method does very well in converting one Point Spread Function to another,
+                            under different conditions of noise, widths, and shapes of the PSFs. While the division method
+                            of deconvolution fails for the case of zero noise level in the narrower PSF, Wiener deconvolution
+                            is able to handle this case better. This is now applied while performing RDI on the IFS images of
+                            RXJ1615, and is seen to aid in reducing the over-subtraction and under-subtraction in the RDI 
+                            images. However, it results in the disk around RXJ1615 not being visible in the RDI images. 
+                            It is found that the reduction in disk signal is affected less by the core of the kernel, 
+                            while being significantly affected by the halo component of the kernel.
                         </p>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+               
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Radio telescope using a Television Dish Antenna</h3>
+                        <p>
+                            –Jul ’16 - Sep ’16: Built a radio telescope using a 60 cm diameter television dish antenna, 
+                            satellite finder, Arduino microcontroller and RadioSkyPipe software to monitor the Sun. Plotted 
+                            Sun's drift scan and calculated its brightness temperature at 11.2 GHz using Rayleigh Jeans 
+                            approximation.
+                        </p>
+                        <p>
+                            –Dec ’17 - Jan ’18:
+                            Advisor - Prof. R. Ramesh, Indian Institute of Astrophysics
+                            I subsequently recorded the sun, moon and galactic background drift scans with better pointing
+                            accuracy.  I also tried interferometry with two such dishes;  and I developed and tested the 
+                            analog and digital back end receivers for the same, and obtained solar interferometric fringes.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                
             </div>
         </div>
     </div>
@@ -194,6 +230,19 @@
 
     <div id="interests" class="background">
         <h2 class="heading">Other Interests</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="interests col-md-8 col-md-offset-2">
+                        <p>
+                                Apart from astronomy, I enjoy teaching science and conducting outreach activities for school students and the
+                                general public. I also perform the dance form- Bharatanatyam, and enjoy sketching, painting and burying myself in
+                                books (not simultaneously! Although that might be a fun experiment) in my free time.  
+                        </p>
+                    </div>
+                </div>
+        </div>
+                        
+        
         <div class="container">
             <div class="row">
                 <div class="interest shadow-large">
